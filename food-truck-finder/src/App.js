@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from'./components/navigation/Navbar'
+import {BrowserRouter} from 'react-router-dom'
 
-const MobileNavbar=()=>{
-  return (
-    <div>
-      <MobileNavbar />
-    </div>
-    
-  );
+function App(){
+  return(
+    <BrowserRouter>
+    <Navbar/>
+    </BrowserRouter>
+  )
 }
 
 export default App;
