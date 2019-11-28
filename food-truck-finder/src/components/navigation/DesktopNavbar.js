@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from 'style-components';
+import styled from 'styled-components';
 import { link } from 'react-router-dom';
+import mobileNavIcon from '../.././images/mobilenavicon.png'
 
 const MyDesktopNavbar=styled.nav`
     display:flex;
@@ -65,7 +66,8 @@ const DesktopNavbar = () => {
                    </li>
 
                </ul>
-               <MyMobileNavButton>Button</MyMobileNavButton>
+               <MyMobileNavButton>
+                    <img src={mobileNavIcon} alt="click the button"/></MyMobileNavButton>
            </MyDesktopNavbar>
         );
 };
