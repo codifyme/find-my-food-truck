@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import mobileNavIcon from '../.././images/mobilenavicon.png'
 
 const MyDesktopNavbar=styled.nav`
@@ -50,19 +50,19 @@ const DesktopNavbar = () => {
 
                <ul className="nav-links">
                    <li>
-                       <link to="/" className="Link">Home</link>
+                       <Link to="/" className="Link">Home</Link>
                    </li>
                    <li>
-                       <link to="/about" className="Link">About</link>
+                       <Link to="/about" className="Link">About</Link>
                    </li>
                    <li>
-                       <link to="/map" className="Link">Map</link>
+                       <Link to="/map" className="Link">Map</Link>
                    </li>
                    <li>
-                       <link to="/bookevents" className="Link">Book Events</link>
+                       <Link to="/bookevents" className="Link">Book Events</Link>
                    </li>
                    <li>
-                       <link to="/recipe" className="Link">recipe</link>
+                       <Link to="/recipe" className="Link">recipe</Link>
                    </li>
 
                </ul>
