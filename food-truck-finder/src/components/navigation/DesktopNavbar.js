@@ -10,16 +10,20 @@ const MyDesktopNavbar=styled.nav`
     justify-content:space-evenly;
     align-items:center;
 
-    background:lightseagreen;
+    /*background:lightseagreen;*/
+    background: linear-gradient(to right, darkturquoise , skyblue);
     color:white;
 
     height:15vh;
 
     .logo{
-        font-size:7vh;
+        font-size:4vh;
         /*font-weight:bold;*/
         text-shadow:3px 3px 3px black;
     }
+    /* .logoimg(
+        background-img:url("././images/foodtruck4.jpeg");
+    ) */
     .nav-links{
         display:flex;
         flex-flow:row nowrap;
@@ -47,6 +51,7 @@ const DesktopNavbar = () => {
         return (
            <MyDesktopNavbar>
                <div className="logo">Find My Food Truck</div>
+               <div className="logoimg"></div>
 
                <ul className="nav-links">
                    <li>
