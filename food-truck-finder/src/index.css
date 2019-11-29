@@ -9,9 +9,19 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Merriweather', serif;
   font-family: 'PT Sans', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+*{
+  margin:0;
+  padding:0;
+}
+html{
+  background:url(./images/sky.jpg) no-repeat center center fixed;
+  background-size: cover;
+
 }

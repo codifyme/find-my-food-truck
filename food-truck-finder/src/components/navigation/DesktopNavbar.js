@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import mobileNavIcon from '../.././images/mobilenavicon.png'
+import Navlinks from './Navlinks';
+import {Link} from 'react-router-dom'
+/*import mobileNavIcon from '../.././images/mobilenavicon.png'*/
 
 const MyDesktopNavbar=styled.nav`
     display:flex;
@@ -9,14 +10,14 @@ const MyDesktopNavbar=styled.nav`
     justify-content:space-evenly;
     align-items:center;
 
-    background:lightblue;
+    background:lightseagreen;
     color:white;
 
     height:15vh;
 
     .logo{
         font-size:7vh;
-        font-weight:bold;
+        /*font-weight:bold;*/
         text-shadow:3px 3px 3px black;
     }
     .nav-links{
@@ -25,28 +26,27 @@ const MyDesktopNavbar=styled.nav`
         justify-content:space-evenly;
         align-items:center;
 
-        width:35vw;
+        width:40vw;
         list-style:none;
     }
     .link{
         color:white;
-        font-size:2.5vh;
+        font-size:3.5vh;
         text-decoration:none;
     }
 `
 
-const MyMobileNavButton=styled.button`
-    background:transparent;
-    height:6vh;
-    width:6vh;
-    border:none;
-    `
-
+// const MyMobileNavButton=styled.button`
+//     background:transparent;
+//     height:1vh;
+//     width:1vh;
+//     border:none;
+//     `
 const DesktopNavbar = () => {
 
         return (
            <MyDesktopNavbar>
-               <div className="logo">Logo</div>
+               <div className="logo">Find My Food Truck</div>
 
                <ul className="nav-links">
                    <li>
@@ -66,8 +66,8 @@ const DesktopNavbar = () => {
                    </li>
 
                </ul>
-               <MyMobileNavButton>
-                    <img src={mobileNavIcon} alt="click the button"/></MyMobileNavButton>
+               {/*<MyMobileNavButton>
+            <img src={mobileNavIcon} alt="click the button"/></MyMobileNavButton>*/}
            </MyDesktopNavbar>
         );
 };
