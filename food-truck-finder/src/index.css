@@ -25,3 +25,21 @@ html{
   background-size: cover;
 
 }
+.menu__logo{
+  text-emphasis: inherit -999999px;
+  display:inline-block;
+  height:100%;
+  width:160px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:0;
+  
+}
+.nav__icon{
+  height:100%;
+  width:60px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}

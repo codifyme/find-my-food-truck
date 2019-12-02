@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navlinks from './Navlinks';
-import {Link} from 'react-router-dom'
+//import {Navlinks} from './Navlinks';
+import {Link} from 'react-router-dom';
+import logo from './../../images/foodtruck5.png';
+import navIcon from './../../images/locator.png';
 /*import mobileNavIcon from '../.././images/mobilenavicon.png'*/
 
 const MyDesktopNavbar=styled.nav`
@@ -10,20 +12,21 @@ const MyDesktopNavbar=styled.nav`
     justify-content:space-evenly;
     align-items:center;
 
-    /*background:lightseagreen;*/
-    background: linear-gradient(to right, darkturquoise , skyblue);
-    color:white;
-
-    height:15vh;
+    background:white;
+    /*background: linear-gradient(to right, darkturquoise , skyblue);*/
+    color:black;
+    margin:10px;
+    height:10vh;
 
     .logo{
-        font-size:4vh;
-        /*font-weight:bold;*/
-        text-shadow:3px 3px 3px black;
+        font-size:10vh;
+        font-weight:bold;
+        text-shadow:3px 3px 3px black; 
     }
-    /* .logoimg(
-        background-img:url("././images/foodtruck4.jpeg");
-    ) */
+    .nav-icon{
+        font-size:10vh;
+
+    }
     .nav-links{
         display:flex;
         flex-flow:row nowrap;
@@ -39,26 +42,21 @@ const MyDesktopNavbar=styled.nav`
         text-decoration:none;
     }
 `
-
-// const MyMobileNavButton=styled.button`
+// const MyMobileNavButton=styled.button
 //     background:transparent;
 //     height:1vh;
 //     width:1vh;
 //     border:none;
-//     `
 const DesktopNavbar = () => {
 
         return (
            <MyDesktopNavbar>
-               <div className="logo">Find My Food Truck</div>
-               <div className="logoimg"></div>
+               <div style={{backgroundImage: 'url(' + logo + ')' 
+            }} className="menu__logo">Food Truck Finder</div>
 
                <ul className="nav-links">
                    <li>
                        <Link to="/" className="Link">Home</Link>
-                   </li>
-                   <li>
-                       <Link to="/about" className="Link">About</Link>
                    </li>
                    <li>
                        <Link to="/map" className="Link">Map</Link>
@@ -67,10 +65,13 @@ const DesktopNavbar = () => {
                        <Link to="/bookevents" className="Link">Book Events</Link>
                    </li>
                    <li>
-                       <Link to="/recipe" className="Link">recipe</Link>
+                       <Link to="/recipe" className="Link">Recipe</Link>
                    </li>
 
                </ul>
+                <button style={{backgroundImage: 'url(' + navIcon + ')'
+               }} className="nav__icon"></button>
+               
                {/*<MyMobileNavButton>
             <img src={mobileNavIcon} alt="click the button"/></MyMobileNavButton>*/}
            </MyDesktopNavbar>
