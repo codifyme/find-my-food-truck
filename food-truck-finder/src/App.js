@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from'./components/navigation/Navbar'
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter as Router, Route,Switch} from 'react-router-dom'
 //import Navlinks from './components/navigation/Navlinks';
-//
-//import recipe from './components/recipe/recipe'
+import Bookevents from './components/bookevents/vendor.container'
+import Recipes from './components/recipes/recipes.container';
 
 function App(){
 
@@ -12,12 +12,20 @@ function App(){
 //   };
 
   return(
-    <BrowserRouter>
+    <Router>
+      <div>
       <Navbar/>
+      <Switch>
+        
+        {/*<Route exact path="/home" components={Home}/>*/}
+        <Route exact path="/recipes" component={Recipes}/>
+        <Route exact path="/bookevents" component={Bookevents}/>
+
+      </Switch>
     {/* <Navlinks/> */}
-    {/*<recipe/>*/}
-    </BrowserRouter>
-    
+
+    </div>
+    </Router>
   );
 }
 
