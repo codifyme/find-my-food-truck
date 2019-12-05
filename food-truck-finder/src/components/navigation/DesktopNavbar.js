@@ -3,7 +3,7 @@ import styled from 'styled-components';
 //import {Navlinks} from './Navlinks';
 import {Link} from 'react-router-dom';
 import logo from './../../images/foodtruck5.png';
-import navIcon from './../../images/locator.png';
+import navIcon from './../../images/foodtruck6.png';
 /*import mobileNavIcon from '../.././images/mobilenavicon.png'*/
 
 const MyDesktopNavbar=styled.nav`
@@ -32,14 +32,18 @@ const MyDesktopNavbar=styled.nav`
         flex-flow:row nowrap;
         justify-content:space-evenly;
         align-items:center;
+        font-size:16px;
+        font-family:'Arial Narrow Bold', sans-serif;
 
         width:40vw;
         list-style:none;
+        position:relative;
     }
     .link{
         color:white;
         font-size:3.5vh;
         text-decoration:none;
+        text-align-last:center;
     }
 `
 // const MyMobileNavButton=styled.button
@@ -56,7 +60,7 @@ const DesktopNavbar = () => {
 
                <ul className="nav-links">
                    <li>
-                       <Link to="/" className="Link">Home</Link>
+                       <Link to="/home" className="Link">Home</Link>
                    </li>
                    <li>
                        <Link to="/map" className="Link">Map</Link>
