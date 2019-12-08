@@ -7,10 +7,10 @@
     overflow-x:hidden;
 }
 .highway{
-    height:200px;
-    width:500px;
+    height:100px;
+    width:400px;
     display:black;
-    background-image:url(./../../images/caranimation/road.jpg);
+    background-image:url(./../../images/road.jpg);
     position:absolute;
     bottom:0;
     left:0;
@@ -27,7 +27,7 @@
 .city{
     height:250px;
     width:500%;
-    background-image:url(./../../images/caranimation/city.png);
+    background-image:url(./../../images/city.png);
     position: absolute;
     bottom:200px;
     left:0;
@@ -49,11 +49,13 @@
     bottom:100px;
     transform:translateX(-50%);
     position:absolute;
-    z-index:2;;
+    z-index:2;
+    background-image:url(./../../images/car.png);
 }
 .car img{
-    width:100%;
+    width:200%;
     animation:car is linear infinite;
+    
 }
 @keyframes car{
     100%{

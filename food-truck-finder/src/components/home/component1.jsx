@@ -11,13 +11,15 @@ export class Component1 extends Component{
             <div>
                 <Spring
         from={{opacity:0, marginTop: -500}}
-        to={{opacity:1, marginTop:0}}>
+        to={{opacity:1, marginTop:0}}
+        config={{delay:1000, duration:1000}}>
+        
             {props =>(
                 <div style={props}>
 
                     <div style={c1Style}>
                         <h1>WHERE IS MY NEXT MEAL PARKED?</h1>
-                        <p>Real time GPS locator with ton of Food Trucks in your Area. Book and Find Your favorite Food Truck; Our top rated vendors are ready for your next event.</p>
+                        <p>Real time GPS locator with ton of Food Trucks in your Area. Book and Find Your favorite Food Truck.</p>
                 
                     </div>
                     {/* <div className="About">
@@ -36,7 +38,9 @@ export class Component1 extends Component{
     const c1Style={
         background:'steelblue',
         color:'white',
-        padding:'1.5rem'
+        padding:'2rem',
+        margin:'4rem',
+        
     }
         // <MyTruckAnimation>
         //     <div style={{backgroundImage: 'url('+hero+')'

@@ -60,7 +60,7 @@ const DesktopNavbar = () => {
 
                <ul className="nav-links">
                    <li>
-                       <Link to="/home" className="Link">Home</Link>
+                       <Link to="/" className="Link">Home</Link>
                    </li>
                    <li>
                        <Link to="/map" className="Link">Map</Link>
