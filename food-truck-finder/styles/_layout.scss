@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  padding: 4rem;
+  height: 100vh;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.truck-container {
+  border-right: 3px solid $color-orange-light;
+  border-bottom: 1px solid $color-orange-light;
+  width: 50rem;
+  font-size: 2rem;
+  height: 100%;
+  overflow: scroll;
+  padding: 0 2rem 2rem 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+    padding: 5rem 10rem;
+    border: 0;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem 4rem;
+  }
+}
+
+
+.map {
+  width: 100%;
+  position: relative;
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 50rem;
+  }
+}
+
+.search-location {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-btn-clear {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-size: 2rem;
+  color: $color-grey;
+  transition: all .2s;
+  background: none;
+
+  &:hover {
+    color: $color-green-dark;
+  }
+}
+
+.food-clear {
+  right: 25%;
+}
+
+.location-clear {
+  right: 1.5rem;
+}
