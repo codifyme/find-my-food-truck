@@ -20,7 +20,7 @@ export class Footer extends Component {
             </div>*/}
                     <div style={c4Style}>
                         
-                        <p>Helping foodies find the food, events, and deals (ON WHEELS)</p>
+                        <h2>Helping foodies find the food, events, and deals (ON WHEELS)</h2>
                         <div className="container"> </div>
                         <footer className="footer text">Copyright 2019 @Food Truck Finder. All rights reserved </footer>
 
