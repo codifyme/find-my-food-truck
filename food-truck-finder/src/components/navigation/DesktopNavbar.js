@@ -72,7 +72,7 @@ const DesktopNavbar = () => {
                        <Link to="/recipes" className="Link">Recipe</Link>
                    </li>
                    <li>
-                       <Link to="/catering" className="Link">Catering</Link>
+                       <Link to="/vendors" className="Link">Vendor</Link>
                    </li>
 
                </ul>

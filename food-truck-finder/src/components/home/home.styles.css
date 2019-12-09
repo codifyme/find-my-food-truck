@@ -124,14 +124,32 @@ menu_car{
     /* max-width:900px; */
     /* padding:0 15px; */
     background-image: url('https://media.giphy.com/media/KH7V8ZOAzNWNYqZP10/giphy.gif');
-    background-position: left;
-    background-size: cover;
-    background-color:grey;
-    height:140px;
-    width:130px;
+    background-position: center;
+    /* background-size: cover; */
+    /* background-color:grey; */
+    height:280px;
+    width:350px;
     /*margin: 0px 0px 20px;*/
 }
 .container .footer-text{
     margin:20px;
     text-align: center;
 }
+
+/* Slideshow*/
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .bg {
+    position: absolute;
+    top: 1;
+    left: 1;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    will-change: opacity;
+  }

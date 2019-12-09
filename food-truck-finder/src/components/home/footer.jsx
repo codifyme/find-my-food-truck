@@ -7,8 +7,8 @@ export class Footer extends Component {
     render() {
         return (
                <Spring
-                    from={{opacity:0}}
-                    to={{opacity:1}}>
+                    from={{opacity:1}}
+                    to={{opacity:0.7}}>
             
             {props =>(
                 <div style={props}>
