@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Spring} from 'react-spring/renderprops';
+//import car from './../../images/foodtruckanimation.png';
+import '../home/home.styles.css';
 
 export class Footer extends Component {
     render() {
@@ -17,10 +19,16 @@ export class Footer extends Component {
                 
             </div>*/}
                     <div style={c4Style}>
-                        <p>Copyright &copy; 2019 Food Truck Finder</p>
+                        
+                        <p>Helping foodies find the food, events, and deals (ON WHEELS)</p>
+                        <div className="container"> </div>
+                        <footer className="footer text">Copyright 2019 @Food Truck Finder. All rights reserved </footer>
 
                     </div>
-                </div>
+            
+             </div>
+            
+
             )}
         </Spring> 
         )
@@ -28,10 +36,11 @@ export class Footer extends Component {
 }
 
 const c4Style={
-    background:'lightsea',
+    background:'black',
     color:'white',
-    padding:'1rem',
-    margin:'1.5rem',
-    align:'center'
+    padding:'2rem',
+    margin:'2rem',
+    position:'relative',
+  
 }
 export default Footer;

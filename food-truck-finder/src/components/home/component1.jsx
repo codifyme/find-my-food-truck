@@ -19,7 +19,7 @@ export class Component1 extends Component{
 
                     <div style={c1Style}>
                         <h1>WHERE IS MY NEXT MEAL PARKED?</h1>
-                        <p>Real time GPS locator with ton of Food Trucks in your Area. Book and Find Your favorite Food Truck.</p>
+                        <p>Real time GPS locator with tons of Food Trucks in your Area. Find Your favorite Food Truck and book our top rated vendors for your next party.</p>
                 
                     </div>
                     {/* <div className="About">
@@ -39,7 +39,7 @@ export class Component1 extends Component{
         background:'steelblue',
         color:'white',
         padding:'2rem',
-        margin:'4rem',
+        margin:'2rem',
         
     }
         // <MyTruckAnimation>

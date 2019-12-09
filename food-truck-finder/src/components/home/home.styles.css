@@ -1,3 +1,24 @@
+/*slide show*/
+.App
+ {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .bg {
+    position: absolute;
+    top: 1; 
+    left: 0;
+    right:0;
+    width: 100vw;
+    height: 50vh;
+    background-size:cover;
+    background-position: cover;
+    will-change: opacity;
+    align-content: center;
+    
+  }
+/* slide show - end */
 .hero{
     height:100vh;
     width:100%;
@@ -50,7 +71,7 @@
     transform:translateX(-50%);
     position:absolute;
     z-index:2;
-    background-image:url(./../../images/car.png);
+    /*background-image:url(./../../images/foodtruck.png);*/
 }
 .car img{
     width:200%;
@@ -91,4 +112,28 @@
     100%{
         transform:rotate(360deg);
     }
+}
+menu_car{
+    align-content: center;
+
+}
+
+/* footer */
+.container{
+    width:auto;
+    /* max-width:900px; */
+    /* padding:0 15px; */
+    background-image: url('https://media.giphy.com/media/KH7V8ZOAzNWNYqZP10/giphy.gif');
+    background-position: left;
+    background-size: cover;
+    background-color:grey;
+    height:140px;
+    width:130px;
+    /*margin: 0px 0px 20px;*/
+}
+.container .footer-text{
+    margin:20px;
+
+    
+   
 }

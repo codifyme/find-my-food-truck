@@ -19,7 +19,7 @@ export class Component2 extends Component {
                     </div> */}
                     <div style={c2Style}>
                         <h1>ABOUT US</h1>
-                        <p>We are 4 Enterpreneurs brought together this idea of building a Food Truck Locator App and helping small business increase their sell by more than 20% </p>
+                        <p>We are 4 Entrepreneurs who brought together this idea of building a Food Truck Locator App to help small businesses increase their sales and improve customer experience.</p>
 
                     </div>
                 </div>
@@ -33,6 +33,6 @@ const c2Style={
     background:'slateblue',
     color:'white',
     padding:'2rem',
-    margin:'4rem'
+    margin:'2rem'
 }
 export default Component2;

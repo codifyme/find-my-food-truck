@@ -12,6 +12,7 @@ const MyHome=styled.div`
     display:flex;
     flex-flow:column nowrap;
     justify-content:flex-start;
+    
     `
 
 class Home extends Component{
