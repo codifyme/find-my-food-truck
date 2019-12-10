@@ -7,7 +7,7 @@ export class Footer extends Component {
     render() {
         return (
                <Spring
-                    from={{opacity:1}}
+                    from={{opacity:0.5}}
                     to={{opacity:0.7}}>
             
             {props =>(

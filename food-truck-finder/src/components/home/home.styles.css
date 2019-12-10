@@ -124,11 +124,11 @@ menu_car{
     /* max-width:900px; */
     /* padding:0 15px; */
     background-image: url('https://media.giphy.com/media/KH7V8ZOAzNWNYqZP10/giphy.gif');
-    background-position: center;
+    background-position-x: left;
     /* background-size: cover; */
     /* background-color:grey; */
-    height:280px;
-    width:350px;
+    height:480px;
+    width:440px;
     /*margin: 0px 0px 20px;*/
 }
 .container .footer-text{
