@@ -49,7 +49,7 @@ These instructions will get you a copy of the project up and running on your loc
 >- git commit -m "heroku deploy"
 >- git push heroku master
 
-# Screen-Shot
+# ScreenShot
 
 >Home Page Food Truck Animation - "Animation"
 ![terminal food truck site](food-truck-finder/public/images/screenshoot.png)
