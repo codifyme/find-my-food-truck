@@ -1,43 +1,53 @@
-import { render } from 'react-dom'
-import React, { useState, useEffect } from 'react'
-import { useTransition, animated, config } from 'react-spring'
-import './home.styles.css'
+import { render } from 'react-dom';
+import React, { useState, useEffect } from 'react';
+import { useTransition, animated, config } from 'react-spring';
+import './home.styles.css';
 
 const slides = [
-  { id: 0, url: 'photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80' },
-  { id: 1, url: 'photo-1544572571-ab94fd872ce4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1534&q=80' },
-  { id: 2, url: 'reserve/bnW1TuTV2YGcoh1HyWNQ_IMG_0207.JPG?ixlib=rb-1.2.1&w=1534&q=80' },
+  {
+    id: 0,
+    url:
+      'photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i'
+  },
+  {
+    id: 1,
+    url:
+      'photo-1544572571-ab94fd872ce4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1534&q=80'
+  },
+  {
+    id: 2,
+    url: 'reserve/bnW1TuTV2YGcoh1HyWNQ_IMG_0207.JPG?ixlib=rb-1.2.1&w=1534&q=80'
+  },
   { id: 3, url: 'photo-1540206395-68808572332f?ixlib=rb-1.2.1&w=1181&q=80' },
-]
+  { id: 4, url: './images/revellie.png' }
+];
 
 const Component3 = () => {
-  const [index, set] = useState(0)
+  const [index, set] = useState(0);
   const transitions = useTransition(slides[index], item => item.id, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
-    config: config.molasses,
-  })
-  useEffect(() => void setInterval(() => set(state => (state + 1) % 4), 2000), [])
+    config: config.molasses
+  });
+  useEffect(
+    () => void setInterval(() => set(state => (state + 1) % 4), 2000),
+    []
+  );
   return transitions.map(({ item, props, key }) => (
     <animated.div
       key={key}
-      class="bg"
-      style={{ ...props, backgroundImage: `url(https://images.unsplash.com/${item.url}&auto=format&fit=crop)` }}
+      class='bg'
+      style={{
+        ...props,
+        backgroundImage: `url(https://images.unsplash.com/${item.url}&auto=format&fit=foodtruck)`
+      }}
     />
-  ))
-}
+  ));
+};
 
-render(<Component3 />, document.getElementById('root'))
+render(<Component3 />, document.getElementById('root'));
 export default Component3;
-
-
-
-
-
-
-
-
 
 // import React from 'react';
 // //import {Spring} from 'react-spring/renderprops';
@@ -58,31 +68,25 @@ export default Component3;
 //     color:black;
 //     margin:10px;
 //     height:10vh;
-  
+
 // `
 // const Component3=()=>{
 //         return(
 //             <MyComponent3>
-                
-                        
-//                             <div style={{backgroundImage: 'url(' + city + ')' 
+
+//                             <div style={{backgroundImage: 'url(' + city + ')'
 //                        }}className="city">City</div>
-                       
-            
-//                         <div style={{backgroundImage: 'url(' + highway + ')' 
+
+//                         <div style={{backgroundImage: 'url(' + highway + ')'
 //                        }}className="highway">Road</div>
 
-//                         <div style={{backgroundImage: 'url(' + car + ')' 
+//                         <div style={{backgroundImage: 'url(' + car + ')'
 //                        }}className="car">Car</div>
-                       
-    
-                
-//             </MyComponent3> 
+
+//             </MyComponent3>
 //         );
 //                     };
 // export default Component3;
-
-
 
 // import React, {Component3} from 'react';
 // import React from 'react';
@@ -97,9 +101,6 @@ export default Component3;
 
 //import './home.styles.css';
 
-
-
-
 //import wheel from './../../images/caranimation/wheel.png';
 
 // const MyComponent3=styled.div`
@@ -111,7 +112,7 @@ export default Component3;
 
 //     background:white;
 //     /*background: linear-gradient(to right, darkturquoise , skyblue);*/
-  
+
 //     .hero{
 //         height:100vh;
 //         width:100%;
@@ -130,7 +131,7 @@ export default Component3;
 //         left:0;
 //         right:0;
 //         z-index:1;
-//         animation:highway 5s linear infinite; 
+//         animation:highway 5s linear infinite;
 //     }
 //     @keyframes highway
 //         {
@@ -218,39 +219,31 @@ export default Component3;
 //                         {/* <div style="c2Style">
 //                             <h1>component 2 - WHERE IS MY NEXT MEAL PARKED?</h1>
 //                             <p>Real time GPS locator with ton of Food Trucks in your Area. Book and Find Your favorite Food Truck; Our top rated vendors are ready for your next event.</p>
-                
+
 //                         </div> */}
 //                         {props =>(
 //                         <div style={props}>
 //                             <h1>Book Events</h1>
 //                             <div className="city"></div>
 //                             <div className="highway"></div>
-                            
-//                             <div style={{backgroundImage: 'url(' + city + ')' 
+
+//                             <div style={{backgroundImage: 'url(' + city + ')'
 //                             }}className="city"></div>
-//                                 <div style={{backgroundImage: 'url(' + road + ')' 
+//                                 <div style={{backgroundImage: 'url(' + road + ')'
 //                             }}className="highway"></div>
 
-//                                 <div style={{backgroundImage: 'url(' + car + ')' 
+//                                 <div style={{backgroundImage: 'url(' + car + ')'
 //                             }}className="car"></div>
-//                                 <div style={{backgroundImage: 'url(' + wheel + ')' 
+//                                 <div style={{backgroundImage: 'url(' + wheel + ')'
 //                             }}className="wheel"></div>
 //                         </div>
-                    
 
-     
-            
 //         )}
 //         </MyComponent3>
 //         )
 // };
 
 // export default Component3;
-
-
-
-
-
 
 // export class Component3 extends Component {
 //     render() {
@@ -265,39 +258,30 @@ export default Component3;
 //                 {/* <div style="c2Style">
 //                     <h1>component 2 - WHERE IS MY NEXT MEAL PARKED?</h1>
 //                     <p>Real time GPS locator with ton of Food Trucks in your Area. Book and Find Your favorite Food Truck; Our top rated vendors are ready for your next event.</p>
-        
+
 //                 </div> */}
 //                 <div style={c3Style}>
 //                     <h1>Book Events</h1>
 //                     <div className="city"></div>
 //                     <div className="highway"></div>
 
-                    
 //                     {/* <div className="wheel"></div> */}
-//                     {/* <div style={{backgroundImage: 'url(' + car + ')' 
+//                     {/* <div style={{backgroundImage: 'url(' + car + ')'
 //                     }} className="car">Top Rated Vendors</div> */}
-                        
-//                         <div style={{backgroundImage: 'url(' + car + ')' 
+
+//                         <div style={{backgroundImage: 'url(' + car + ')'
 //                     }}className="city"></div>
-
-
-
 
 //                     <div className="car"></div>
 
-
-
-//                         <div style={{backgroundImage: 'url(' + car + ')' 
+//                         <div style={{backgroundImage: 'url(' + car + ')'
 //                     }}className="city"></div>
-                
-                      
-                       
 
 //                 </div>
-                
+
 //             </div>
 //             )}
-//     </Spring> 
+//     </Spring>
 // )
 // }
 // }

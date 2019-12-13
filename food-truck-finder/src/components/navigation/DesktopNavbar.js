@@ -71,9 +71,9 @@ const DesktopNavbar = () => {
                    <li>
                        <Link to="/recipes" className="Link">Recipe</Link>
                    </li>
-                   <li>
+                   {/* <li>
                        <Link to="/vendors" className="Link">Vendor</Link>
-                   </li>
+                   </li> */}
 
                </ul>
                 <button style={{backgroundImage: 'url(' + navIcon + ')'
