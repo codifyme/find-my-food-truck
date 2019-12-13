@@ -70,6 +70,8 @@ These instructions will get you a copy of the project up and running on your loc
 # Built With
 
 - Visual Studio Code - Text Editor
+- React
+- React Spring
 - Javascript
 - Node.js
 - Terminal/Gitbash
