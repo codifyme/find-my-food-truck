@@ -5,6 +5,21 @@ FIND MY FOOD TRUCK
 
 This App allows users to find Food Trucks in the San Francisco Area, It provides information about food trucks location and their current address, recipes and vendor registration(Book events). The App uses Node JS/React Router Dom, Redux, and Axios for the server and routing, MongoDB/Mongoose for the database coming from our local and Remote DB. For the layout of our site we used pure React to implement master components that make it easy and simple to navigate in the most convenient way.
 
+## Project Name:
+> Find My Food Truck
+
+## Project No:
+> 3
+
+## Project Members:
+> Nazim Uddin, Bilal Sarimeseli, Angel Conchachez, Luis Muela
+
+## API Documentations & Sources
+1. Google Map ==> https://developers.google.com/maps/documentation/
+2. Recipe Search API ==> https://www.edamam.com/
+3. Street Food API ==> https://streetfoodapp.com/api
+4. Food Truck API ==> https://foodtrucklocator.docs.apiary.io/#
+
 ## Dependencies
 
 You will need to npm install the following node modules:
@@ -75,6 +90,9 @@ These instructions will get you a copy of the project up and running on your loc
 - Javascript
 - Node.js
 - Terminal/Gitbash
+
+# Demo
+The demo of My Food Truck Application can be found **[Here](http://foodtruck-finder.s3-website-us-west-1.amazonaws.com/)**
 
 # Author
 
