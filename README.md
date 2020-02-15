@@ -96,5 +96,5 @@ The demo of Find My Food Truck Application can be found **[Here](http://foodtruc
 
 # Author
 
->-  **[Group Project#3](https://github.com/codifyme/find-my-food-truck)**. 
+>-  **[Group Project 3](https://github.com/codifyme/find-my-food-truck)**. 
 
