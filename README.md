@@ -92,7 +92,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Terminal/Gitbash
 
 # Demo
-The demo of My Food Truck Application can be found **[Here](http://foodtruck-finder.s3-website-us-west-1.amazonaws.com/)**
+The demo of Find My Food Truck Application can be found **[Here](http://foodtruck-finder.s3-website-us-west-1.amazonaws.com/)**
 
 # Author
 
